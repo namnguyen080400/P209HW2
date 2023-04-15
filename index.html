@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Menu</title>
+<link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+<h2>Pizza Menu</h2>
+
+<form name="pizza" id="pizzaForm" action="/action_page.php">
+    <p>Please choose pizza's size:</p>
+    <input type="radio" id="small" name="pizzaSize" value=7.00 checked>
+    <label for="small">Small $7.00</label><br>
+    <input type="radio" id="medium" name="pizzaSize" value=10.00>
+    <label for="medium">Medium $10.00</label><br>
+    <input type="radio" id="large" name="pizzaSize" value=14.00>
+    <label for="large">Large $14.00</label><br>
+    Pizza Topping:<select name="topping" id="pizzaTopping">
+        <option value=0.0 selected="selected">no topping</option>
+        <option value=2.00 selected="selected">1 topping</option>
+        <option value=3.00 selected="selected">2 toppings</option>
+    </select>
+    <br />
+    <button id="PizzaPrice" type="button" onclick="pizzaPriceCost()">Submit</button> 
+</form>
+<p id="result"></p>
+
+<script src="main.js"></script>
+</body>
+
+</html>
